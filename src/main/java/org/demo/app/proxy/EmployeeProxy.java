@@ -2,6 +2,7 @@ package org.demo.app.proxy;
 
 
 import lombok.RequiredArgsConstructor;
+import org.demo.app.exception.EmployeeReactiveException;
 import org.demo.app.model.Employee;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -11,6 +12,7 @@ import reactor.core.publisher.Mono;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.UUID;
 
 @Component
 @RequiredArgsConstructor
@@ -52,7 +54,7 @@ public class EmployeeProxy {
     private Employee getStaticEmployee() {
         var employee = Employee
                 .builder()
-                .id(0L)
+                .id(UUID.randomUUID().toString())
                 .firstName("NONE")
                 .lastName("NONE")
                 .email("none@demo.org")
