@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -20,7 +20,7 @@ public class Employee {
     private String email;
     private BigDecimal salary;
     @JsonFormat(pattern = "yyyy/MM/dd")
-    private LocalDate joinDate;
+    private Date joinDate;
 
 }
 
