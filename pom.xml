@@ -10,7 +10,7 @@
     </parent>
     <groupId>org.demo.app</groupId>
     <artifactId>employee-client</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>employee-client</name>
     <description>employee-client</description>
     <properties>
